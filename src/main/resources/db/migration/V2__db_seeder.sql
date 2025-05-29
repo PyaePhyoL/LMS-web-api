@@ -69,7 +69,7 @@ VALUES
 ;
 
 -- First Year Courses
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC101',
            'Programming Fundamentals',
@@ -80,7 +80,7 @@ VALUES (
            5
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC102',
            'Discrete Mathematics',
@@ -91,7 +91,7 @@ VALUES (
            5
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC103',
            'Object-Oriented Programming',
@@ -102,7 +102,7 @@ VALUES (
            5
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC104',
            'Data Structures',
@@ -114,7 +114,7 @@ VALUES (
        );
 
 -- Second Year Courses
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC201',
            'Database Systems',
@@ -125,7 +125,7 @@ VALUES (
            4
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC202',
            'Web Technologies',
@@ -136,7 +136,7 @@ VALUES (
            4
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC203',
            'Operating Systems',
@@ -147,7 +147,7 @@ VALUES (
            4
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC204',
            'Computer Networks',
@@ -159,7 +159,7 @@ VALUES (
        );
 
 -- Third Year Courses
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC301',
            'Artificial Intelligence',
@@ -170,7 +170,7 @@ VALUES (
            3
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC302',
            'Compiler Design',
@@ -181,7 +181,7 @@ VALUES (
            3
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC303',
            'Cloud Computing',
@@ -192,7 +192,7 @@ VALUES (
            3
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC304',
            'Mobile App Development',
@@ -204,7 +204,7 @@ VALUES (
        );
 
 -- Fourth Year Courses
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC401',
            'Machine Learning',
@@ -215,7 +215,7 @@ VALUES (
            2
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC402',
            'Software Architecture',
@@ -226,7 +226,7 @@ VALUES (
            2
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC403',
            'Big Data Technologies',
@@ -237,7 +237,7 @@ VALUES (
            2
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC404',
            'Cybersecurity',
@@ -249,7 +249,7 @@ VALUES (
        );
 
 -- Fifth Year Courses
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC501',
            'Advanced Algorithms',
@@ -260,7 +260,7 @@ VALUES (
            1
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC502',
            'Deep Learning',
@@ -271,7 +271,7 @@ VALUES (
            1
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC503',
            'Quantum Computing',
@@ -282,7 +282,7 @@ VALUES (
            1
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC504',
            'Research Methodology',
@@ -294,7 +294,7 @@ VALUES (
        );
 
 -- Master's Courses
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC601',
            'Advanced Research Methods',
@@ -305,7 +305,7 @@ VALUES (
            1
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC602',
            'Distributed Systems',
@@ -317,7 +317,7 @@ VALUES (
        );
 
 -- PhD Courses
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC801',
            'Advanced Topics in Computing',
@@ -328,7 +328,7 @@ VALUES (
            1
        );
 
-INSERT INTO courses_t (course_code, name, image, description, academic_year_id, semester, lecturer_id)
+INSERT INTO courses_t (course_code, name, image_url, description, academic_year_id, semester, lecturer_id)
 VALUES (
            'CSC802',
            'Dissertation Research',

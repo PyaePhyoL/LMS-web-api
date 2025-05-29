@@ -67,4 +67,22 @@ public class LecturerService {
                 .orElseThrow(() -> new EntityNotFoundException("Lecturer with id " + id + " not found!"));
     }
 
+    public String updateLecturer(int id, LecturerRegisterForm form, MultipartFile image) throws IOException {
+        var lecturer = lecturerRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Lecturer with id " + id + " not found!"));
+        lecturer.setFirstName(form.getFirstName());
+        lecturer.setLastName(form.getLastName());
+        lecturer.setDateOfBirth(form.getDateOfBirth());
+        lecturer.setGender(form.getGender());
+        lecturer.setAcademicTitle(form.getAcademicTitle());
+        lecturer.setFirstJoinDate(form.getFirstJoinDate());
+        lecturer.setImageUrl(cloudinaryUpload.uploadImage(image));
+        lecturerRepository.save(lecturer);
+        return "Lecturer updated successfully";
+    }
+
+    public String deleteById(int id) {
+        var lecturer = lecturerRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Lecturer with id " + id + " not found!"));
+        lecturerRepository.deleteById(id);
+        return "Lecturer deleted successfully";
+    }
 }

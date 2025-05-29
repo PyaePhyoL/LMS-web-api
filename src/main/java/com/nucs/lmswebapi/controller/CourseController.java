@@ -3,6 +3,7 @@ package com.nucs.lmswebapi.controller;
 import com.nucs.lmswebapi.dto.CourseCreateForm;
 import com.nucs.lmswebapi.dto.CourseDto;
 import com.nucs.lmswebapi.dto.CourseListItem;
+import com.nucs.lmswebapi.model.enums.Semester;
 import com.nucs.lmswebapi.service.CloudinaryUpload;
 import com.nucs.lmswebapi.service.CourseService;
 import lombok.RequiredArgsConstructor;
@@ -32,9 +33,15 @@ public class CourseController {
         );
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List<CourseListItem>> getCourseList() {
         return ResponseEntity.status(HttpStatus.OK).body(courseService.getCourseList());
+    }
+
+    @GetMapping
+    public ResponseEntity<List<CourseDto>> getCourseList(@RequestParam("year") int yearId,
+                                                              @RequestParam("semester") Semester semester) {
+        return ResponseEntity.ok(courseService.getCourseListByYearAndSemester(yearId, semester));
     }
 
     @GetMapping("/{id}")
@@ -43,12 +50,19 @@ public class CourseController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<String> updateCourseById(@PathVariable int id, @RequestBody CourseCreateForm form) {
-        return ResponseEntity.status(HttpStatus.OK).body(courseService.updateCourseById(id, form));
+    public ResponseEntity<String> updateCourseById(@PathVariable int id,
+                                                   @RequestPart("course") CourseCreateForm form,
+                                                   @RequestPart("image") MultipartFile image) throws IOException {
+        return ResponseEntity.status(HttpStatus.OK).body(courseService.updateCourseById(id, form, image));
     }
 
     @PostMapping(value = "/file", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<String> uploadFile(@RequestPart("file") MultipartFile file) throws IOException {
         return ResponseEntity.status(HttpStatus.CREATED).body(cloudinaryUpload.uploadImage(file));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deleteCourseById(@PathVariable int id) {
+        return ResponseEntity.ok(courseService.deleteById(id));
     }
 }

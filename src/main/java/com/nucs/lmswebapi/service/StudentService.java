@@ -69,4 +69,27 @@ public class StudentService {
         var students = studentRepository.findAllStudentInfos(PageRequest.of(page, size).withSort(Sort.by(Sort.Direction.DESC, "id")));
         return new PageResult<>(students, count, page, size);
     }
+
+    public String deleteStudent(int id) {
+        var student = studentRepository.findById(id).orElse(null);
+        if (student != null) {
+            studentRepository.delete(student);
+            return "Student deleted successfully";
+        }
+        return "Student not found";
+    }
+
+    public String updateStudent(int id, StudentRegisterForm form, MultipartFile image) throws IOException {
+        var student = studentRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Student with id " + id + " not found"));
+        var academicYear = academicYearRepository.findById(form.getAcademicYearId()).orElse(null);
+        student.setFirstName(form.getFirstName());
+        student.setLastName(form.getLastName());
+        student.setGender(form.getGender());
+        student.setDateOfBirth(form.getDateOfBirth());
+        student.setFirstJoiningDate(form.getFirstJoiningDate());
+        student.setAcademicYear(academicYear);
+        student.setImageUrl(cloudinaryUpload.uploadImage(image));
+        studentRepository.save(student);
+        return "Student updated successfully";
+    }
 }

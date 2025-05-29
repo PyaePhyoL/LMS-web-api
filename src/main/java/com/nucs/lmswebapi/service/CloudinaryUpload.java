@@ -18,7 +18,10 @@ public class CloudinaryUpload {
     private final Cloudinary cloudinary;
 
     public String uploadImage(MultipartFile file) throws IOException {
-        log.info("Uploading image " + file.getOriginalFilename());
+
+        if(file == null || file.isEmpty()) {
+            return null;
+        }
         Map params1 = ObjectUtils.asMap(
                 "use_filename", true,
                 "unique_filename", false,

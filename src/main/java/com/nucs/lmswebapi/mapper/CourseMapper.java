@@ -25,6 +25,7 @@ public class CourseMapper {
                 .courseCode(course.getCourseCode())
                 .name(course.getName())
                 .description(course.getDescription())
+                .imageUrl(course.getImageUrl())
                 .academicYearLabel(course.getAcademicYear().getYearLabel())
                 .semester(course.getSemester())
                 .referenceLinks(course.getReferenceLinks())

@@ -27,6 +27,7 @@ public interface StudentRepository extends JpaRepository<Student, Integer> {
     s.active
     )
     from Student s
+    where s.id = :id
 """)
     Optional<StudentDto> findStudentDtoById(Integer id);
 

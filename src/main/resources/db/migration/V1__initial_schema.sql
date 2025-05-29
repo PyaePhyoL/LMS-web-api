@@ -53,7 +53,7 @@ CREATE TABLE courses_t (
                            id INT AUTO_INCREMENT PRIMARY KEY,
                            course_code VARCHAR(255) NOT NULL,
                            name VARCHAR(255) NOT NULL,
-                           image VARCHAR(255),
+                           image_url VARCHAR(255),
                            description TEXT,
                            academic_year_id INT,
                            semester ENUM('FIRST_SEMESTER', 'SECOND_SEMESTER') NOT NULL,
