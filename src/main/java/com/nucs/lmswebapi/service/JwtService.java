@@ -26,12 +26,14 @@ public class JwtService {
 
 
     public String generateAccessToken(UserDetails user) {
+
         return buildToken(null, user, accessTokenExpirationTime);
     }
 
     public String  buildToken(Map<String, Object> claims, UserDetails user, long expiration) {
         return Jwts.builder()
                 .claims(claims)
+                .claim("roles", user.getAuthorities())
                 .subject(user.getUsername())
                 .issuedAt(Date.from(Instant.now()))
                 .expiration(Date.from(Instant.now().plusSeconds(expiration)))
