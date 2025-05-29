@@ -29,7 +29,7 @@ VALUES
      'Second semester involves intensive dissertation research with emphasis on generating original contributions to knowledge. Students lead research teams, supervise junior researchers, and manage collaborative projects. Activities include journal manuscript submission, patent applications for novel inventions, and international research visits. Dissertation writing integrates findings into coherent theoretical frameworks, with regular committee feedback. Career preparation includes academic job interviews, industry research position networking, and entrepreneurial venture planning. The program culminates in a public defense demonstrating significant scholarly impact and research maturity.');
 
 -- Admin user (password: 12345)
-INSERT INTO users_t (email, password, role, created_date, created_by)
+INSERT INTO users_t (email, password, role, created_at, created_by)
 VALUES (
            'admin@university.edu',
            '$2a$10$Ao1R/Fded/WSZN4LXOk9OuECocvkPQOKtTg.Dg5a3qwYgicH50QCW',  -- BCrypt hash
@@ -39,7 +39,7 @@ VALUES (
        );
 
 -- Insert users for lecturers
-INSERT INTO users_t (email, password, role, created_date, created_by)
+INSERT INTO users_t (email, password, role, created_at, created_by)
 VALUES
     ('johndoe@university.edu', '$2a$10$Ao1R/Fded/WSZN4LXOk9OuECocvkPQOKtTg.Dg5a3qwYgicH50QCW', 'LECTURER', NOW(), 'admin@university.edu'),
     ('sarahsmith@university.edu', '$2a$10$Ao1R/Fded/WSZN4LXOk9OuECocvkPQOKtTg.Dg5a3qwYgicH50QCW', 'LECTURER', NOW(), 'admin@university.edu'),
