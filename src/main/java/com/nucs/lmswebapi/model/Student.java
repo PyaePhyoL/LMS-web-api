@@ -22,7 +22,7 @@ public class Student {
     private Integer id;
     private String firstName;
     private String lastName;
-
+    private String imageUrl;
     @OneToOne(cascade = CascadeType.ALL)
     private User user;
 

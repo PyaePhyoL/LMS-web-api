@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: "LMS-web-api"
+  servlet:
+    multipart:
+      enabled: true
+      max-request-size: 20MB
+      max-file-size: 10MB
+  datasource:
+    url: jdbc:h2:mem:lms_db
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  flyway:
+    enabled: true
+    baseline-version: 0
+    baseline-on-migrate: true
+
+
+cloudinary:
+  url: cloudinary://938236534589833:Nhni0ujhm5VRzoaU8pQpdCXY2dI@dfbqmtcdj
+  cloud-name: dfbqmtcdj
+  api-key: 938236534589833
+  api-secret: Nhni0ujhm5VRzoaU8pQpdCXY2dI
+
+application:
+  security:
+    jwt:
+      secret-key: 2bb80d537b1da3e38bd30361aa855686bde0eacd7162fef6a25fe97bf527a25b
+      expiration: 86400
+

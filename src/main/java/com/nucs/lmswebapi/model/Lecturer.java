@@ -24,6 +24,7 @@ public class Lecturer {
     private String firstName;
     private String lastName;
     private LocalDate dateOfBirth;
+    private String imageUrl;
     @Enumerated(EnumType.STRING)
     private Gender gender;
     private String academicTitle;

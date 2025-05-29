@@ -22,6 +22,7 @@ public class Course {
     private Integer id;
     private String courseCode;
     private String name;
+    private String image;
     @Column(columnDefinition = "TEXT")
     private String description;
 

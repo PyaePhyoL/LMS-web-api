@@ -18,7 +18,7 @@ public class AcademicYear {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String yearName;
+    private String yearLabel;
 
     @Column(columnDefinition = "TEXT")
     private String firstSemesterDescription;

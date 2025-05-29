@@ -19,14 +19,14 @@ public class Auditable {
 
     @CreatedDate
     @Column(updatable = false, nullable = false)
-    private LocalDateTime createdDate;
+    private LocalDateTime createdAt;
     @CreatedBy
     @Column(updatable = false, nullable = false)
     private String createdBy;
 
     @LastModifiedDate
     @Column(insertable = false)
-    private LocalDateTime modifiedDate;
+    private LocalDateTime modifiedAt;
     @LastModifiedBy
     @Column(insertable = false)
     private String modifiedBy;
