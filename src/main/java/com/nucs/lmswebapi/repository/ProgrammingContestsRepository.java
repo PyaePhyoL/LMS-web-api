@@ -2,6 +2,7 @@ package com.nucs.lmswebapi.repository;
 
 import com.nucs.lmswebapi.dto.ProgrammingContestDto;
 import com.nucs.lmswebapi.model.ProgrammingContest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
@@ -16,7 +17,7 @@ public interface ProgrammingContestsRepository extends JpaRepository<Programming
     c.title,
     c.description,
     c.imageUrl,
-    c.starDate
+    c.startDate
     )
     from ProgrammingContest as c
     order by c.createdAt desc
@@ -30,10 +31,22 @@ public interface ProgrammingContestsRepository extends JpaRepository<Programming
     c.title,
     c.description,
     c.imageUrl,
-    c.starDate
+    c.startDate
     )
     from ProgrammingContest as c
     where c.id = :id
 """)
     Optional<ProgrammingContestDto> findProgrammingContestById(int id);
+
+    @Query("""
+    select new com.nucs.lmswebapi.dto.ProgrammingContestDto(
+    c.id,
+    c.title,
+    c.description,
+    c.imageUrl,
+    c.startDate
+    )
+    from ProgrammingContest as c
+""")
+    List<ProgrammingContestDto> findAllContests(Pageable pageable);
 }

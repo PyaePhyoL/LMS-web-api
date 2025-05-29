@@ -11,7 +11,7 @@ public class ProgrammingContestMapper {
         return ProgrammingContest.builder()
                 .title(dto.getTitle())
                 .description(dto.getDescription())
-                .starDate(dto.getStarDate())
+                .startDate(dto.getStartDate())
                 .build();
     }
 }

@@ -12,5 +12,5 @@ public class ProgrammingContestDto {
     private String title;
     private String description;
     private String imageUrl;
-    private LocalDate starDate;
+    private LocalDate startDate;
 }

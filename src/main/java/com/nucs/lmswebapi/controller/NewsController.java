@@ -1,6 +1,7 @@
 package com.nucs.lmswebapi.controller;
 
 import com.nucs.lmswebapi.dto.NewsDto;
+import com.nucs.lmswebapi.dto.PageResult;
 import com.nucs.lmswebapi.service.NewsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -23,6 +24,14 @@ public class NewsController {
         return ResponseEntity.status(HttpStatus.CREATED).body(newsService.createNews(form, image));
     }
 
+    @GetMapping("/all")
+    public ResponseEntity<PageResult<NewsDto>> getAllNews(
+            @RequestParam(required = false, defaultValue = "0") int page,
+            @RequestParam(required = false, defaultValue = "10") int size
+    ) {
+        return ResponseEntity.ok(newsService.getAllNews(page, size));
+    }
+
     @GetMapping
     public ResponseEntity<List<NewsDto>> getLatestNews() {
         return ResponseEntity.ok(newsService.getLatestNews());
@@ -31,6 +40,13 @@ public class NewsController {
     @GetMapping("/{id}")
     public ResponseEntity<NewsDto> getNewsById(@PathVariable int id) {
         return ResponseEntity.ok(newsService.getNewsById(id));
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<String> updateNews(@PathVariable int id,
+                                             @RequestPart("news") NewsDto form,
+                                             @RequestPart(value = "image", required = false) MultipartFile image) throws IOException {
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(newsService.updateNews(id, form, image));
     }
 
     @DeleteMapping("/{id}")

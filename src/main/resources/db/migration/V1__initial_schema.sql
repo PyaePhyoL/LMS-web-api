@@ -69,3 +69,27 @@ CREATE TABLE course_reference_links (
 
                                         FOREIGN KEY (course_id) REFERENCES courses_t(id)
 );
+
+CREATE TABLE news_t (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        title VARCHAR(255) NOT NULL,
+                        description TEXT NOT NULL,
+                        image_url VARCHAR(512),
+                        created_at DATETIME NOT NULL,
+                        created_by VARCHAR(255) NOT NULL,
+                        modified_at DATETIME DEFAULT NULL,
+                        modified_by VARCHAR(255) DEFAULT NULL
+);
+
+CREATE TABLE programming_contests_t (
+                                        id INT AUTO_INCREMENT PRIMARY KEY,
+                                        title VARCHAR(255) NOT NULL,
+                                        description TEXT NOT NULL,
+                                        image_url VARCHAR(512),
+                                        start_date DATE NOT NULL,
+                                        created_at DATETIME NOT NULL,
+                                        created_by VARCHAR(255) NOT NULL,
+                                        modified_at DATETIME DEFAULT NULL,
+                                        modified_by VARCHAR(255) DEFAULT NULL
+);
+

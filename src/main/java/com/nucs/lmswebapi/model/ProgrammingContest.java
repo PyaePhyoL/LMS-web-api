@@ -20,5 +20,5 @@ public class ProgrammingContest extends Auditable{
     private String title;
     private String description;
     private String imageUrl;
-    private LocalDate starDate;
+    private LocalDate startDate;
 }
