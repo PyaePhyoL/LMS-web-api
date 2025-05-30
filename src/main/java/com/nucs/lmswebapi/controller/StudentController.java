@@ -42,7 +42,7 @@ public class StudentController {
     @PutMapping("/{id}")
     public ResponseEntity<String> updateStudent(@PathVariable int id,
                                                 @RequestPart("student") StudentRegisterForm form,
-                                                @RequestPart("image") MultipartFile image) throws IOException {
+                                                @RequestPart(value = "image", required = false) MultipartFile image) throws IOException {
         return ResponseEntity.status(HttpStatus.ACCEPTED).body(studentService.updateStudent(id, form, image));
     }
 

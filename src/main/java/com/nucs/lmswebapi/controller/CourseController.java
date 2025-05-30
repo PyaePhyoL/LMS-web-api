@@ -57,7 +57,7 @@ public class CourseController {
     @PutMapping("/{id}")
     public ResponseEntity<String> updateCourseById(@PathVariable int id,
                                                    @RequestPart("course") CourseCreateForm form,
-                                                   @RequestPart("image") MultipartFile image) throws IOException {
+                                                   @RequestPart(value = "image", required = false) MultipartFile image) throws IOException {
         return ResponseEntity.status(HttpStatus.OK).body(courseService.updateCourseById(id, form, image));
     }
 

@@ -41,7 +41,7 @@ public class LecturerController {
     @PutMapping("/{id}")
     public ResponseEntity<String> updateLecturer(@PathVariable int id,
                                                  @RequestPart("lecturer") LecturerRegisterForm form,
-                                                 @RequestPart("image") MultipartFile image) throws IOException {
+                                                 @RequestPart(value = "image", required = false) MultipartFile image) throws IOException {
         return ResponseEntity.status(HttpStatus.ACCEPTED).body(lecturerService.updateLecturer(id, form, image));
     }
 
