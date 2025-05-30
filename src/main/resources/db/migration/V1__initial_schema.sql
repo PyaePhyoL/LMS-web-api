@@ -23,11 +23,11 @@ CREATE TABLE lecturers_t (
                              first_name VARCHAR(255) NOT NULL,
                              last_name VARCHAR(255) NOT NULL,
                              image_url VARCHAR(255),
-                             date_of_birth DATE NOT NULL,
+                             date_of_birth DATE,
                              gender ENUM('MALE', 'FEMALE') NOT NULL,
                              academic_title VARCHAR(255),
-                             first_join_date DATE NOT NULL,
-                             active BOOLEAN NOT NULL,
+                             first_join_date DATE,
+                             active BOOLEAN,
                              user_id INT UNIQUE,
 
                              CONSTRAINT fk_lecturers_user FOREIGN KEY (user_id) REFERENCES users_t(id)
@@ -40,10 +40,10 @@ CREATE TABLE students_t (
                             image_url VARCHAR(255),
                             user_id INT UNIQUE,
                             gender ENUM('MALE', 'FEMALE') NOT NULL,
-                            date_of_birth DATE NOT NULL,
+                            date_of_birth DATE,
                             academic_year_id INT,
-                            first_joining_date DATE NOT NULL,
-                            active BOOLEAN NOT NULL,
+                            first_joining_date DATE,
+                            active BOOLEAN,
 
                             CONSTRAINT fk_students_user FOREIGN KEY (user_id) REFERENCES users_t(id),
                             CONSTRAINT fk_students_academic_year FOREIGN KEY (academic_year_id) REFERENCES academic_years_t(id)
