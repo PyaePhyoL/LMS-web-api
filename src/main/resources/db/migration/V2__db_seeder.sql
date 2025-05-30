@@ -51,19 +51,19 @@ VALUES
 -- Insert lecturers with user references
 INSERT INTO lecturers_t (first_name, last_name, image_url, date_of_birth, gender, academic_title, first_join_date, active, user_id)
 VALUES
-    ('John', 'Doe', 'http://res.cloudinary.com/dfbqmtcdj/image/upload/v1748495288/file.jpg', '1980-05-15', 'MALE', 'Professor', '2010-09-01', 1,
+    ('John', 'Doe', 'http://res.cloudinary.com/dfbqmtcdj/image/upload/v1748616496/file.jpg', '1980-05-15', 'MALE', 'Professor', '2010-09-01', 1,
      (SELECT id FROM users_t WHERE email = 'johndoe@university.edu')),
 
-    ('Sarah', 'Smith', 'http://res.cloudinary.com/dfbqmtcdj/image/upload/v1748495315/file.jpg', '1985-08-22', 'FEMALE', 'Associate Professor', '2015-03-15', 1,
+    ('Sarah', 'Smith', 'http://res.cloudinary.com/dfbqmtcdj/image/upload/v1748616246/file.jpg', '1985-08-22', 'FEMALE', 'Associate Professor', '2015-03-15', 1,
      (SELECT id FROM users_t WHERE email = 'sarahsmith@university.edu')),
 
-    ('Robert', 'Johnson', 'http://res.cloudinary.com/dfbqmtcdj/image/upload/v1748495363/file.jpg', '1975-11-30', 'MALE', 'Senior Lecturer', '2008-07-01', 1,
+    ('Robert', 'Johnson', 'http://res.cloudinary.com/dfbqmtcdj/image/upload/v1748616419/file.jpg', '1975-11-30', 'MALE', 'Senior Lecturer', '2008-07-01', 1,
      (SELECT id FROM users_t WHERE email = 'robertjohnson@university.edu')),
 
-    ('Emily', 'Wilson', 'http://res.cloudinary.com/dfbqmtcdj/image/upload/v1748495380/file.jpg', '1990-02-14', 'FEMALE', 'Assistant Professor', '2018-11-20', 1,
+    ('Emily', 'Wilson', 'http://res.cloudinary.com/dfbqmtcdj/image/upload/v1748616208/file.jpg', '1990-02-14', 'FEMALE', 'Assistant Professor', '2018-11-20', 1,
      (SELECT id FROM users_t WHERE email = 'emilywilson@university.edu')),
 
-    ('Michael', 'Chen', 'http://res.cloudinary.com/dfbqmtcdj/image/upload/v1748495406/file.jpg', '1995-08-24', 'FEMALE', 'Assistant Professor', '2019-01-13', 1,
+    ('Michael', 'Chen', 'http://res.cloudinary.com/dfbqmtcdj/image/upload/v1748616150/file.jpg', '1995-08-24', 'FEMALE', 'Assistant Professor', '2019-01-13', 1,
      (SELECT id FROM users_t WHERE email = 'michaelchen@university.edu'))
 
 ;
