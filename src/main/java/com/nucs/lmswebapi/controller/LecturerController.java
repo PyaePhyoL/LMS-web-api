@@ -33,6 +33,11 @@ public class LecturerController {
         return ResponseEntity.ok(lecturerService.getLecturerById(id));
     }
 
+    @GetMapping("/info/{email}")
+    public ResponseEntity<LecturerInfoList> getLecturerInfoByEmail(@PathVariable String email) {
+        return ResponseEntity.ok(lecturerService.getLecturerInfoByEmail(email));
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<String> updateLecturer(@PathVariable int id,
                                                  @RequestPart("lecturer") LecturerRegisterForm form,

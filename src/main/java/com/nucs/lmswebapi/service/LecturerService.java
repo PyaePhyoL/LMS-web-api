@@ -85,4 +85,8 @@ public class LecturerService {
         lecturerRepository.deleteById(id);
         return "Lecturer deleted successfully";
     }
+
+    public LecturerInfoList getLecturerInfoByEmail(String email) {
+        return lecturerRepository.findLecturerInfoByEmail(email).orElse(null);
+    }
 }

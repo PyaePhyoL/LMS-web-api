@@ -34,6 +34,11 @@ public class StudentController {
         return ResponseEntity.ok(studentService.getStudentDtoById(id));
     }
 
+    @GetMapping("/info/{email}")
+    public ResponseEntity<StudentInfoList> getStudentInfoByEmail(@PathVariable String email) {
+        return ResponseEntity.ok(studentService.getStudentInfoByEmail(email));
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<String> updateStudent(@PathVariable int id,
                                                 @RequestPart("student") StudentRegisterForm form,

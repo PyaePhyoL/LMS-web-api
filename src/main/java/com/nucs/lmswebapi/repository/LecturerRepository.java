@@ -42,4 +42,15 @@ public interface LecturerRepository extends JpaRepository<Lecturer, Integer> {
 """)
     List<LecturerInfoList> findAllLecturerInfoList(Pageable pageable);
 
+    @Query("""
+    select new com.nucs.lmswebapi.dto.LecturerInfoList(
+    l.id,
+    CONCAT(l.firstName, " ", l.lastName),
+    l.user.email,
+    l.imageUrl
+    )
+    from Lecturer l
+    where l.user.email = :email
+""")
+    Optional<LecturerInfoList> findLecturerInfoByEmail(String email);
 }

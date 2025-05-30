@@ -64,6 +64,10 @@ public class StudentService {
                 .orElseThrow(() -> new EntityNotFoundException("Student with id " + id + " not found"));
     }
 
+    public StudentInfoList getStudentInfoByEmail(String email) {
+        return studentRepository.findStudentInfoByEmail(email).orElse(null);
+    }
+
     public PageResult<StudentInfoList> getAllStudentInfos(int page, int size) {
         var count = studentRepository.count();
         var students = studentRepository.findAllStudentInfos(PageRequest.of(page, size).withSort(Sort.by(Sort.Direction.DESC, "id")));

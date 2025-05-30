@@ -6,7 +6,6 @@ import com.nucs.lmswebapi.model.Student;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -41,4 +40,16 @@ public interface StudentRepository extends JpaRepository<Student, Integer> {
     from Student s
 """)
     List<StudentInfoList> findAllStudentInfos(Pageable pageable);
+
+    @Query("""
+    select new com.nucs.lmswebapi.dto.StudentInfoList(
+    s.id,
+    CONCAT(s.firstName, " ", s.lastName),
+    s.user.email,
+    s.imageUrl
+    )
+    from Student s
+    where s.user.email = :email
+""")
+    Optional<StudentInfoList> findStudentInfoByEmail(String email);
 }
