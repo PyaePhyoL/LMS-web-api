@@ -46,7 +46,7 @@ public class StudentService {
                 .lastName(form.getLastName())
                 .gender(form.getGender())
                 .dateOfBirth(form.getDateOfBirth())
-                .firstJoiningDate(form.getFirstJoiningDate())
+                .firstJoinDate(form.getFirstJoinDate())
                 .academicYear(academicYear)
                 .user(savedUser)
                 .active(true)
@@ -86,7 +86,7 @@ public class StudentService {
         student.setLastName(form.getLastName());
         student.setGender(form.getGender());
         student.setDateOfBirth(form.getDateOfBirth());
-        student.setFirstJoiningDate(form.getFirstJoiningDate());
+        student.setFirstJoinDate(form.getFirstJoinDate());
         student.setAcademicYear(academicYear);
         student.setImageUrl(cloudinaryUpload.uploadImage(image));
         studentRepository.save(student);

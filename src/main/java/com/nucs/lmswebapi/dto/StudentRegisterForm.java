@@ -17,5 +17,5 @@ public class StudentRegisterForm {
     private Gender gender;
     private LocalDate dateOfBirth;
     private int academicYearId;
-    private LocalDate firstJoiningDate;
+    private LocalDate firstJoinDate;
 }

@@ -8,7 +8,7 @@ VALUES (
            'admin'
        );
 
-INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_joining_date, active)
+INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_join_date, active)
 VALUES (
            'Emily',
            'Johnson',
@@ -31,7 +31,7 @@ VALUES (
            'admin'
        );
 
-INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_joining_date, active)
+INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_join_date, active)
 VALUES (
            'Michael',
            'Smith',
@@ -54,7 +54,7 @@ VALUES (
            'admin'
        );
 
-INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_joining_date, active)
+INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_join_date, active)
 VALUES (
            'Sophia',
            'Williams',
@@ -77,7 +77,7 @@ VALUES (
            'admin'
        );
 
-INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_joining_date, active)
+INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_join_date, active)
 VALUES (
            'Jacob',
            'Brown',
@@ -100,7 +100,7 @@ VALUES (
            'admin'
        );
 
-INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_joining_date, active)
+INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_join_date, active)
 VALUES (
            'Olivia',
            'Jones',
@@ -123,7 +123,7 @@ VALUES (
            'admin'
        );
 
-INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_joining_date, active)
+INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_join_date, active)
 VALUES (
            'Ethan',
            'Garcia',
@@ -146,7 +146,7 @@ VALUES (
            'admin'
        );
 
-INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_joining_date, active)
+INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_join_date, active)
 VALUES (
            'Ava',
            'Miller',
@@ -169,7 +169,7 @@ VALUES (
            'admin'
        );
 
-INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_joining_date, active)
+INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_join_date, active)
 VALUES (
            'Noah',
            'Davis',
@@ -192,7 +192,7 @@ VALUES (
            'admin'
        );
 
-INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_joining_date, active)
+INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_join_date, active)
 VALUES (
            'Isabella',
            'Rodriguez',
@@ -215,7 +215,7 @@ VALUES (
            'admin'
        );
 
-INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_joining_date, active)
+INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_of_birth, academic_year_id, first_join_date, active)
 VALUES (
            'Liam',
            'Martinez',

@@ -23,7 +23,7 @@ public interface StudentRepository extends JpaRepository<Student, Integer> {
     s.gender,
     s.dateOfBirth,
     s.academicYear.yearLabel,
-    s.firstJoiningDate,
+    s.firstJoinDate,
     s.active
     )
     from Student s

@@ -35,6 +35,6 @@ public class Student {
     @JoinColumn(name = "academic_year_id")
     private AcademicYear academicYear;
 
-    private LocalDate firstJoiningDate;
+    private LocalDate firstJoinDate;
     private boolean active;
 }

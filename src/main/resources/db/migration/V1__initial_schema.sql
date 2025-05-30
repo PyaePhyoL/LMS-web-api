@@ -42,7 +42,7 @@ CREATE TABLE students_t (
                             gender ENUM('MALE', 'FEMALE') NOT NULL,
                             date_of_birth DATE,
                             academic_year_id INT,
-                            first_joining_date DATE,
+                            first_join_date DATE,
                             active BOOLEAN,
 
                             CONSTRAINT fk_students_user FOREIGN KEY (user_id) REFERENCES users_t(id),
