@@ -19,6 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -81,5 +82,9 @@ public class CourseService {
         var  course = courseRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Course not found"));
         courseRepository.delete(course);
         return "Course deleted successfully";
+    }
+
+    public List<CourseDto> getAllCourseDetails() {
+        return courseRepository.findAll().stream().map(CourseMapper::toCourseDto).toList();
     }
 }

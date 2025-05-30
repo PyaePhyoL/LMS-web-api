@@ -22,4 +22,5 @@ public interface CourseRepository extends JpaRepository<Course, Integer> {
     List<CourseListItem> findAllCourseListItems();
 
     List<Course> findByAcademicYear(AcademicYear academicYear);
+
 }

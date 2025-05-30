@@ -33,13 +33,18 @@ public class CourseController {
         );
     }
 
-    @GetMapping("/all")
+    @GetMapping("/list")
     public ResponseEntity<List<CourseListItem>> getCourseList() {
         return ResponseEntity.status(HttpStatus.OK).body(courseService.getCourseList());
     }
 
+    @GetMapping("/all")
+    public ResponseEntity<List<CourseDto>> getAllCourseDetails() {
+        return ResponseEntity.status(HttpStatus.OK).body(courseService.getAllCourseDetails());
+    }
+
     @GetMapping
-    public ResponseEntity<List<CourseDto>> getCourseList(@RequestParam("year") int yearId,
+    public ResponseEntity<List<CourseDto>> getCourseListByYearAndSemester(@RequestParam("year") int yearId,
                                                               @RequestParam("semester") Semester semester) {
         return ResponseEntity.ok(courseService.getCourseListByYearAndSemester(yearId, semester));
     }
