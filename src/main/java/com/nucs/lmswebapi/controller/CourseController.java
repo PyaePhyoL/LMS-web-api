@@ -61,7 +61,7 @@ public class CourseController {
         return ResponseEntity.status(HttpStatus.OK).body(courseService.updateCourseById(id, form, image));
     }
 
-    @PostMapping(value = "/file", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PutMapping(value = "/file", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<String> uploadFile(@RequestPart("file") MultipartFile file) throws IOException {
         return ResponseEntity.status(HttpStatus.CREATED).body(cloudinaryUpload.uploadImage(file));
     }
