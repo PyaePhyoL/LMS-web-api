@@ -31,11 +31,11 @@ public class SecurityConfig {
         http.csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(request->
                         request
-//                                .requestMatchers(HttpMethod.POST, "/courses", "/news", "/contests").hasAnyRole("ADMIN", "LECTURER")
-//                                .requestMatchers(HttpMethod.DELETE, "/courses/{id}", "/news/{id}", "/contests/{id}", "/students/{id}").hasAnyRole("ADMIN", "LECTURER")
-//                                .requestMatchers(HttpMethod.PUT, "/courses/{id}", "/news/{id}", "/contests/{id}", "/students/{id}").hasAnyRole("ADMIN", "LECTURER")
-//                                .requestMatchers(HttpMethod.PUT, "/students/{id}").authenticated()
-//                                .requestMatchers(HttpMethod.GET, "/courses","/courses/*", "/students","/students/*").authenticated()
+                                .requestMatchers(HttpMethod.POST, "/courses", "/news", "/contests").hasAnyRole("ADMIN", "LECTURER")
+                                .requestMatchers(HttpMethod.DELETE, "/courses/{id}", "/news/{id}", "/contests/{id}", "/students/{id}").hasAnyRole("ADMIN", "LECTURER")
+                                .requestMatchers(HttpMethod.PUT, "/courses/{id}", "/news/{id}", "/contests/{id}", "/students/{id}").hasAnyRole("ADMIN", "LECTURER")
+                                .requestMatchers(HttpMethod.PUT, "/students/{id}").authenticated()
+                                .requestMatchers(HttpMethod.GET, "/courses","/courses/*", "/students","/students/*").authenticated()
                                 .anyRequest().permitAll()
                 )
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
