@@ -12,7 +12,7 @@ INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_
 VALUES (
            'Emily',
            'Johnson',
-           'https://example.com/students/emily_johnson.jpg',
+           'https://static.vecteezy.com/system/resources/previews/036/744/532/non_2x/user-profile-icon-symbol-template-free-vector.jpg',
            (SELECT id FROM users_t WHERE email = 'emilyjohnson@university.edu'),
            'FEMALE',
            '2002-05-15',
@@ -35,7 +35,7 @@ INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_
 VALUES (
            'Michael',
            'Smith',
-           'https://example.com/students/michael_smith.jpg',
+           'https://static.vecteezy.com/system/resources/previews/036/744/532/non_2x/user-profile-icon-symbol-template-free-vector.jpg',
            (SELECT id FROM users_t WHERE email = 'michaelsmith@university.edu'),
            'MALE',
            '2003-08-22',
@@ -58,7 +58,7 @@ INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_
 VALUES (
            'Sophia',
            'Williams',
-           'https://example.com/students/sophia_williams.jpg',
+           'https://static.vecteezy.com/system/resources/previews/036/744/532/non_2x/user-profile-icon-symbol-template-free-vector.jpg',
            (SELECT id FROM users_t WHERE email = 'sophiawilliams@university.edu'),
            'FEMALE',
            '2001-11-30',
@@ -81,7 +81,7 @@ INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_
 VALUES (
            'Jacob',
            'Brown',
-           'https://example.com/students/jacob_brown.jpg',
+           'https://static.vecteezy.com/system/resources/previews/036/744/532/non_2x/user-profile-icon-symbol-template-free-vector.jpg',
            (SELECT id FROM users_t WHERE email = 'jacobbrown@university.edu'),
            'MALE',
            '2004-02-14',
@@ -104,7 +104,7 @@ INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_
 VALUES (
            'Olivia',
            'Jones',
-           'https://example.com/students/olivia_jones.jpg',
+           'https://static.vecteezy.com/system/resources/previews/036/744/532/non_2x/user-profile-icon-symbol-template-free-vector.jpg',
            (SELECT id FROM users_t WHERE email = 'oliviajones@university.edu'),
            'FEMALE',
            '2000-07-19',
@@ -127,7 +127,7 @@ INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_
 VALUES (
            'Ethan',
            'Garcia',
-           'https://example.com/students/ethan_garcia.jpg',
+           'https://static.vecteezy.com/system/resources/previews/036/744/532/non_2x/user-profile-icon-symbol-template-free-vector.jpg',
            (SELECT id FROM users_t WHERE email = 'ethangarcia@university.edu'),
            'MALE',
            '2003-04-25',
@@ -150,7 +150,7 @@ INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_
 VALUES (
            'Ava',
            'Miller',
-           'https://example.com/students/ava_miller.jpg',
+           'https://static.vecteezy.com/system/resources/previews/036/744/532/non_2x/user-profile-icon-symbol-template-free-vector.jpg',
            (SELECT id FROM users_t WHERE email = 'avamiller@university.edu'),
            'FEMALE',
            '2002-09-08',
@@ -173,7 +173,7 @@ INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_
 VALUES (
            'Noah',
            'Davis',
-           'https://example.com/students/noah_davis.jpg',
+           'https://static.vecteezy.com/system/resources/previews/036/744/532/non_2x/user-profile-icon-symbol-template-free-vector.jpg',
            (SELECT id FROM users_t WHERE email = 'noahdavis@university.edu'),
            'MALE',
            '2001-12-03',
@@ -196,7 +196,7 @@ INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_
 VALUES (
            'Isabella',
            'Rodriguez',
-           'https://example.com/students/isabella_rodriguez.jpg',
+           'https://static.vecteezy.com/system/resources/previews/036/744/532/non_2x/user-profile-icon-symbol-template-free-vector.jpg',
            (SELECT id FROM users_t WHERE email = 'isabellarodriguez@university.edu'),
            'FEMALE',
            '2004-06-17',
@@ -219,7 +219,7 @@ INSERT INTO students_t (first_name, last_name, image_url, user_id, gender, date_
 VALUES (
            'Liam',
            'Martinez',
-           'https://example.com/students/liam_martinez.jpg',
+           'https://static.vecteezy.com/system/resources/previews/036/744/532/non_2x/user-profile-icon-symbol-template-free-vector.jpg',
            (SELECT id FROM users_t WHERE email = 'liammartinez@university.edu'),
            'MALE',
            '2000-03-29',

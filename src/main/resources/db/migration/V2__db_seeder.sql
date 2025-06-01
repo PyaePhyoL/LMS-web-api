@@ -73,8 +73,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC101',
            'Programming Fundamentals',
-           'prog_fund.jpg',
-           'Introduction to programming concepts using Python, covering variables, control structures, functions, and basic data structures. Develops computational thinking and problem-solving techniques.',
+           'https://i.ytimg.com/vi/ykSsccKKNh4/maxresdefault.jpg',
+           'Programming is a fundamental skill in the modern digital world, forming the backbone of software development, data science, artificial intelligence, and countless other disciplines. An introductory course in programming serves as the foundation upon which more advanced computational knowledge is built. Python, known for its simplicity and readability, has emerged as one of the most popular and beginner-friendly programming languages. This course introduces core programming concepts using Python, providing students with essential skills in logic, syntax, problem-solving, and computational thinking.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (First Year)'),
            'FIRST_SEMESTER',
            5
@@ -84,8 +84,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC102',
            'Discrete Mathematics',
-           'discrete_math.jpg',
-           'Fundamentals of logic, sets, relations, and combinatorics. Applications in computer science including algorithm analysis and cryptography foundations.',
+           'https://public-files.gumroad.com/mhagmz0oxs67saht0znt6bp7ugti',
+           'Discrete mathematics forms the foundational framework for computer science, encompassing propositional and predicate logic for formal reasoning and proof techniques, set theory for understanding collections and operations on data, relations and functions for modeling connections and mappings between elements, and combinatorics for analyzing counting problems and discrete structures. These concepts are directly applied in algorithm design and analysis to evaluate efficiency and correctness, in cryptography to develop secure encryption schemes, in database systems to manage and query structured information, and in software engineering to verify program behavior, while graph theory provides essential tools for modeling networks, optimizing routes, and representing hierarchical data structures across various computing domains.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (First Year)'),
            'FIRST_SEMESTER',
            5
@@ -95,8 +95,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC103',
            'Object-Oriented Programming',
-           'oop_java.jpg',
-           'Advanced Java programming covering classes, inheritance, polymorphism, exception handling, and GUI development. Introduction to design patterns.',
+           'https://phoenixnap.com/glossary/wp-content/uploads/2022/12/object-oriented-programming-explained.jpg',
+           'This course explores advanced Java concepts, including object-oriented programming principles such as classes, inheritance, and polymorphism, along with robust exception handling for error management. It also covers GUI development using frameworks like Swing or JavaFX to build interactive applications. Additionally, the course introduces fundamental design patterns—such as Singleton, Factory, and Observer—to teach best practices in software architecture, promoting reusable, maintainable, and scalable code for real-world applications.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (First Year)'),
            'SECOND_SEMESTER',
            5
@@ -106,8 +106,10 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC104',
            'Data Structures',
-           'data_structures.jpg',
-           'Implementation and analysis of arrays, linked lists, stacks, queues, trees, and hash tables. Algorithm complexity analysis (Big-O notation).',
+           'https://miro.medium.com/v2/resize:fit:1400/1*J38nYZU7gzu-4lQmtjlSUw.jpeg',
+           '**Data Structures and Algorithms**
+
+This course covers the implementation and analysis of fundamental data structures, including arrays, linked lists, stacks, queues, trees, and hash tables, emphasizing their strengths, trade-offs, and real-world applications. Students will learn to evaluate algorithmic efficiency through complexity analysis using Big-O notation, enabling them to select optimal data structures and algorithms for performance-critical problems. Practical programming assignments reinforce theoretical concepts, building proficiency in designing and optimizing solutions for common computational challenges.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (First Year)'),
            'SECOND_SEMESTER',
            5
@@ -118,8 +120,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC201',
            'Database Systems',
-           'database_sys.jpg',
-           'ER modeling, normalization, SQL programming, and transaction management. Practical experience with MySQL and database design principles.',
+           'https://miro.medium.com/v2/resize:fit:1400/1*szBsfY6lp8A0jb1zOvJ0mw.jpeg',
+           'This course provides a comprehensive study of database design and management, covering Entity-Relationship (ER) modeling for conceptual design and normalization techniques (1NF to 3NF/BCNF) to eliminate redundancies. Students will gain hands-on SQL programming skills for querying, updating, and managing relational databases, along with transaction management (ACID properties, concurrency control). Practical labs using MySQL reinforce database design principles, schema implementation, and performance optimization, preparing students to develop efficient, scalable database solutions for real-world applications.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Second Year)'),
            'FIRST_SEMESTER',
            4
@@ -129,8 +131,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC202',
            'Web Technologies',
-           'web_tech.jpg',
-           'HTML5, CSS3, JavaScript, and responsive design. Introduction to frontend frameworks and accessibility standards.',
+           'https://miro.medium.com/v2/resize:fit:1400/1*szBsfY6lp8A0jb1zOvJ0mw.jpeg',
+           'This course provides a comprehensive introduction to modern frontend development, covering core technologies including HTML5 for content structure, CSS3 for styling and layout, and JavaScript for interactive functionality. Students will learn responsive design principles using Flexbox and Grid to create adaptable interfaces for all devices, while exploring accessibility standards (WCAG) to ensure inclusive web experiences. The curriculum also introduces popular frontend frameworks like React or Vue.js, equipping learners with industry-relevant skills to build dynamic, user-friendly web applications. Hands-on projects reinforce theoretical concepts through practical implementation of complete, standards-compliant websites.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Second Year)'),
            'FIRST_SEMESTER',
            4
@@ -140,8 +142,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC203',
            'Operating Systems',
-           'os_concepts.jpg',
-           'Process scheduling, memory management, file systems, and concurrency. Practical exercises with Linux kernel modules.',
+           'https://artoftesting.com/wp-content/uploads/2022/02/operating-system.png',
+           'This course explores core OS concepts including process scheduling algorithms (FCFS, Round Robin, Priority), memory management techniques (paging, segmentation, virtual memory), and file system architectures (FAT, ext, NTFS). Students will examine concurrency mechanisms such as semaphores, mutexes, and deadlock prevention strategies. The course includes hands-on Linux kernel module development, providing practical experience with system calls, process synchronization, and device drivers. Through C programming assignments and kernel hacking exercises, learners gain insight into modern OS design principles and performance tradeoffs.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Second Year)'),
            'SECOND_SEMESTER',
            4
@@ -151,8 +153,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC204',
            'Computer Networks',
-           'computer_networks.jpg',
-           'OSI/TCP-IP models, routing protocols, socket programming, and network security fundamentals.',
+           'https://cdn.sanity.io/images/4hlaqclp/production/bd843511e8f7e2475b57c908a5b68e763e5f9de1-626x626.jpg',
+           'This course provides a comprehensive study of modern networking, beginning with the OSI and TCP/IP reference models to understand layered communication architectures. Students will explore routing protocols (RIP, OSPF, BGP) and switching concepts, along with practical socket programming in Python/C to implement client-server applications. The curriculum covers network security fundamentals including firewalls, encryption (SSL/TLS), and common vulnerabilities (DDoS, MITM attacks). Hands-on labs using network simulation tools (Wireshark, GNS3) reinforce theoretical concepts, enabling students to design, analyze, and secure enterprise-grade networks.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Second Year)'),
            'SECOND_SEMESTER',
            4
@@ -163,8 +165,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC301',
            'Artificial Intelligence',
-           'ai_fundamentals.jpg',
-           'Heuristic search, knowledge representation, machine learning fundamentals, and natural language processing basics.',
+           'https://media.geeksforgeeks.org/wp-content/uploads/20240319155102/what-is-ai-artificial-intelligence.webp',
+           'This course explores core AI methodologies, including heuristic search algorithms (A*, greedy best-first) for optimization problems and knowledge representation techniques (logic, semantic networks) for structured reasoning. Students will examine machine learning fundamentals covering supervised/unsupervised learning, neural networks, and evaluation metrics. The curriculum introduces natural language processing (NLP) basics such as tokenization, sentiment analysis, and word embeddings (Word2Vec). Through Python-based projects using libraries like scikit-learn and NLTK, learners gain hands-on experience implementing intelligent systems while analyzing their ethical implications and real-world applications.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Third Year)'),
            'FIRST_SEMESTER',
            3
@@ -174,8 +176,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC302',
            'Compiler Design',
-           'compiler_design.jpg',
-           'Lexical analysis, parsing techniques, syntax-directed translation, and code optimization.',
+           'https://lastmomenttuitions.com/wp-content/uploads/2021/03/Compiler-design-1-1.jpg',
+           'This course provides a comprehensive study of compiler architecture, beginning with lexical analysis using finite automata and regular expressions for token generation. Students will explore parsing techniques including top-down (LL) and bottom-up (LR) approaches, along with syntax-directed translation for semantic analysis and intermediate code generation. The curriculum covers optimization methods at both local (peephole) and global (data-flow) levels, with emphasis on target code generation for modern architectures. Through hands-on projects building compiler components using tools like Flex/Bison or ANTLR, students gain practical experience in transforming high-level code to efficient machine representations while analyzing performance tradeoffs.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Third Year)'),
            'FIRST_SEMESTER',
            3
@@ -185,8 +187,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC303',
            'Cloud Computing',
-           'cloud_computing.jpg',
-           'Virtualization, containerization (Docker/Kubernetes), serverless architecture, and cloud deployment models.',
+           'https://platinumdatarecovery.com/wp-content/uploads/2023/05/cloud-computing-diagram.webp',
+           'This course examines contemporary infrastructure paradigms, beginning with virtualization technologies (hypervisors, VM orchestration) and progressing to containerization using Docker for lightweight process isolation and Kubernetes for scalable container management. Students will explore serverless architecture (FaaS) and its event-driven execution model, along with major cloud deployment models (IaaS, PaaS, SaaS) across providers like AWS/Azure/GCP. Hands-on labs cover CI/CD pipelines, infrastructure-as-code (Terraform), and cloud-native design patterns, equipping learners to deploy scalable, resilient distributed systems while optimizing cost and performance in multi-cloud environments.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Third Year)'),
            'SECOND_SEMESTER',
            3
@@ -196,8 +198,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC304',
            'Mobile App Development',
-           'mobile_dev.jpg',
-           'Android/iOS application development, cross-platform frameworks, and mobile UI/UX design principles.',
+           'https://www.mindinventory.com/blog/wp-content/uploads/2022/10/app-category-trends.jpeg',
+           'This course provides a comprehensive introduction to building modern mobile applications, covering native development for Android (Kotlin/Java) and iOS (Swift), as well as cross-platform frameworks like Flutter and React Native for efficient code reuse. Students will learn core mobile UI/UX design principles, including responsive layouts, Material Design (Android), and Human Interface Guidelines (iOS). The curriculum includes hands-on projects in API integration, state management, and performance optimization, along with best practices for app publishing on Google Play and the App Store. By the end, learners will be able to design, develop, and deploy polished mobile applications for diverse use cases.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Third Year)'),
            'SECOND_SEMESTER',
            3
@@ -208,8 +210,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC401',
            'Machine Learning',
-           'machine_learning.jpg',
-           'Supervised/unsupervised learning, neural networks, model evaluation, and practical implementation with TensorFlow/PyTorch.',
+           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO1ptSsKs2vpgQ4PdT6dHPdQCL85jI6J-_DI8Xh-m0xF5HptIFBjWdiBC1L3uzUPZgysc&usqp=CAU',
+           'This course covers core concepts in machine learning, including supervised learning (regression, classification) and unsupervised learning (clustering, dimensionality reduction), along with neural networks and deep learning architectures (CNNs, RNNs). Students will learn model evaluation techniques (cross-validation, metrics like precision/recall) and gain hands-on experience implementing algorithms using TensorFlow and PyTorch, enabling them to build, train, and deploy practical ML models for real-world applications.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Fourth Year)'),
            'FIRST_SEMESTER',
            2
@@ -219,8 +221,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC402',
            'Software Architecture',
-           'software_arch.jpg',
-           'Microservices, event-driven systems, domain-driven design, and architecture patterns.',
+           'https://cdn.moontechnolabs.com/live/blog/wp-content/uploads/2023/11/21232523/Software-Architecture-Patterns.jpg',
+           'This course explores advanced architectural paradigms, including microservices for modular, scalable systems and event-driven design for asynchronous communication using message brokers (Kafka, RabbitMQ). Students will learn domain-driven design (DDD) principles to model complex business logic, alongside patterns like CQRS, Saga, and API Gateway for distributed systems. Through case studies and cloud-native labs (AWS/Azure), participants gain hands-on experience designing resilient, maintainable architectures that balance performance, scalability, and organizational alignment.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Fourth Year)'),
            'FIRST_SEMESTER',
            2
@@ -230,8 +232,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC403',
            'Big Data Technologies',
-           'big_data.jpg',
-           'Hadoop ecosystem, Spark processing, NoSQL databases, and distributed computing paradigms.',
+           'https://www.smartsight.in/wp-content/uploads/2021/07/Big-Data-01-1200x628.jpg',
+           'This course provides an in-depth exploration of modern large-scale data processing, covering the Hadoop ecosystem (HDFS, MapReduce, YARN) for batch processing and Apache Spark for in-memory analytics (RDDs, DataFrames). Students will work with NoSQL databases (MongoDB, Cassandra) to understand schema flexibility and scalability, while studying distributed computing paradigms (CAP theorem, consensus algorithms). Hands-on labs using cloud platforms (AWS EMR, GCP Dataproc) teach pipeline design for real-world data engineering challenges, emphasizing fault tolerance and optimization in petabyte-scale environments.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Fourth Year)'),
            'SECOND_SEMESTER',
            2
@@ -241,8 +243,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC404',
            'Cybersecurity',
-           'cybersecurity.jpg',
-           'Cryptographic systems, ethical hacking, digital forensics, and security protocol analysis.',
+           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ73vjoG3FqEJ0kZtOFbtvLA5bCCXldr09DUQ&s',
+           'This course provides a comprehensive study of modern security practices, covering cryptographic systems (symmetric/asymmetric encryption, PKI, hashing) and ethical hacking techniques (penetration testing, vulnerability assessment). Students will learn digital forensics methodologies (evidence acquisition, memory analysis) and security protocol analysis (TLS, IPSec) to evaluate system robustness. Hands-on labs using tools like Metasploit, Wireshark, and Autopsy simulate real-world attack/defense scenarios, equipping learners with skills to secure networks while adhering to legal and ethical frameworks.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Fourth Year)'),
            'SECOND_SEMESTER',
            2
@@ -253,8 +255,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC501',
            'Advanced Algorithms',
-           'advanced_algo.jpg',
-           'Randomized algorithms, approximation methods, parallel algorithms, and computational complexity theory.',
+           'https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/dd1abac9-220d-4c4d-a8c5-d755e2606800/public',
+           'This course examines modern algorithm design techniques, including randomized algorithms (Las Vegas, Monte Carlo) for probabilistic efficiency and approximation methods (LP rounding, greedy heuristics) for NP-hard problems. Students will explore parallel algorithms (MapReduce, PRAM models) for multi-core and distributed systems, alongside computational complexity theory (P vs. NP, reduction techniques) to classify problem tractability. Practical assignments using CUDA/OpenMP and real-world case studies (e.g., genome assembly, large-scale optimization) bridge theory with performance-aware implementation, emphasizing scalability and tradeoffs in algorithm selection.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Fifth Year)'),
            'FIRST_SEMESTER',
            1
@@ -264,8 +266,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC502',
            'Deep Learning',
-           'deep_learning.jpg',
-           'CNN, RNN, GAN architectures, reinforcement learning, and transfer learning techniques.',
+           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyMDlPtW_o_HekWc6ViiV5F9lc6ASCpAPo-zp_XaUjd8j-3m8BeIpaejG4DwqwwTHQC2M&usqp=CAU',
+           'This course provides an in-depth exploration of modern deep learning architectures, including CNNs for image/video analysis, RNNs/LSTMs for sequential data, and GANs for generative modeling. Students will study reinforcement learning (Q-learning, policy gradients) for decision-making systems and transfer learning (fine-tuning, feature extraction) to optimize pre-trained models. Hands-on projects using PyTorch/TensorFlow cover cutting-edge applications like autonomous agents, style transfer, and multimodal AI, with emphasis on optimizing model performance, interpretability, and ethical deployment in real-world scenarios.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Fifth Year)'),
            'FIRST_SEMESTER',
            1
@@ -275,8 +277,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC503',
            'Quantum Computing',
-           'quantum_comp.jpg',
-           'Qubits, quantum gates, quantum algorithms (Shor, Grover), and quantum error correction.',
+           'https://gmo-research.ai/en/application/files/5716/6080/5815/Quantum_Computing_Image.png',
+           'This course introduces the principles of quantum computation, beginning with qubits and their representations (Bloch sphere, Dirac notation), quantum gates (Pauli, Hadamard, CNOT) for state manipulation, and key quantum algorithms (Shor’s for factorization, Grover’s for search). Students will explore quantum error correction (stabilizer codes, surface codes) to mitigate decoherence, alongside simulators (Qiskit, Cirq) to implement circuits. Theoretical rigor is paired with hands-on labs, addressing both the transformative potential and current hardware limitations of quantum technologies in cryptography, optimization, and machine learning.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Fifth Year)'),
            'SECOND_SEMESTER',
            1
@@ -286,8 +288,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC504',
            'Research Methodology',
-           'research_methods.jpg',
-           'Experimental design, statistical analysis, literature review techniques, and academic publishing.',
+           'https://www.papertrue.com/blog/wp-content/uploads/2024/03/Research-Methodology.png',
+           'This course equips students with rigorous experimental design principles (hypothesis formulation, control variables, randomization) and statistical analysis techniques (ANOVA, regression, Bayesian inference) to ensure robust data interpretation. Participants will master literature review strategies (systematic reviews, meta-analysis) and academic publishing workflows (peer review, journal selection, ethical citations). Through hands-on projects, learners develop skills to design reproducible studies, analyze results with tools like R/Python, and communicate findings effectively via research papers, conference posters, and grant proposals—bridging scientific inquiry with professional dissemination.',
            (SELECT id FROM academic_years_t WHERE year_label = 'B.C.Sc (Fifth Year)'),
            'SECOND_SEMESTER',
            1
@@ -298,8 +300,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC601',
            'Advanced Research Methods',
-           'research_methods.jpg',
-           'Research design, qualitative/quantitative methods, data collection techniques, and ethical considerations.',
+           'https://www.macroinc.com/english/wp-content/uploads/2016/04/Internal-Webinar-final.jpg',
+           'This course provides a comprehensive framework for conducting rigorous academic and applied research, covering research design (experimental, correlational, case study approaches) and methodological paradigms (qualitative, quantitative, and mixed-methods). Students will learn data collection techniques (surveys, interviews, experiments, observational studies) and master analytical tools (SPSS, NVivo, Python/R) for robust data interpretation. The curriculum emphasizes ethical considerations (IRB protocols, informed consent, bias mitigation) and research integrity throughout the process. Practical assignments guide learners in developing research proposals, executing studies, and presenting findings for scholarly or industry applications, ensuring methodological rigor and real-world relevance.',
            (SELECT id FROM academic_years_t WHERE year_label = 'M.C.Sc'),
            'FIRST_SEMESTER',
            1
@@ -309,8 +311,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC602',
            'Distributed Systems',
-           'distributed_sys.jpg',
-           'Consensus algorithms, fault tolerance, distributed transactions, and scalable system design.',
+           'https://miro.medium.com/v2/resize:fit:1400/1*1vYQfOU-iKGzSldPWjnfRA.jpeg',
+           'This course examines the core principles of building reliable, large-scale distributed systems, covering consensus algorithms (Paxos, Raft, PBFT) for achieving agreement in decentralized networks and fault tolerance techniques (replication, checkpointing, leader election) to ensure system resilience. Students will explore distributed transactions (2PC, 3PC, Saga patterns) for data consistency and scalable system design (sharding, load balancing, CAP theorem tradeoffs). Through hands-on projects with frameworks like Apache ZooKeeper and distributed databases (Cassandra, Spanner), learners gain practical experience architecting systems that balance availability, consistency, and partition tolerance for real-world applications.',
            (SELECT id FROM academic_years_t WHERE year_label = 'M.C.Sc'),
            'SECOND_SEMESTER',
            2
@@ -321,8 +323,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC801',
            'Advanced Topics in Computing',
-           'phd_seminar.jpg',
-           'Cutting-edge research areas, interdisciplinary approaches, and emerging computing paradigms.',
+           'https://3.files.edl.io/685c/21/01/19/184006-aa6e74bf-15b6-4540-b40d-76823c84e605.jpg',
+           'This course explores the vanguard of computing science, examining cutting-edge research areas such as quantum machine learning, neuromorphic computing, and bio-inspired algorithms. Students will investigate interdisciplinary approaches that bridge computing with fields like biotechnology (DNA storage), physics (quantum supremacy), and cognitive science (AGI development). The curriculum covers emerging computing paradigms including edge intelligence, swarm robotics, and differentiable programming, while critically assessing their societal implications. Through seminar-style discussions, hands-on prototyping, and literature reviews, participants will engage with open problems at the intersection of theory, hardware, and application—preparing them to contribute to the next wave of computational innovation.',
            (SELECT id FROM academic_years_t WHERE year_label = 'Ph.D'),
            'FIRST_SEMESTER',
            1
@@ -332,8 +334,8 @@ INSERT INTO courses_t (course_code, name, image_url, description, academic_year_
 VALUES (
            'CSC802',
            'Dissertation Research',
-           'dissertation.jpg',
-           'Original research development, scholarly publication strategies, and research impact measurement.',
+           'https://contenthub-static.grammarly.com/blog/wp-content/uploads/2023/04/Dissertation.png',
+           'This course equips graduate students and emerging researchers with the skills to develop original research contributions, from ideation through execution, emphasizing innovative problem formulation and rigorous methodology. Participants will learn scholarly publication strategies, including high-impact journal targeting, peer review navigation, and open-access dissemination, while mastering research impact measurement through citation analysis, altmetrics, and translational outcomes. The curriculum blends hands-on writing workshops with critical analysis of research ecosystems, empowering students to amplify the reach and significance of their work within academic, industrial, and policy contexts.',
            (SELECT id FROM academic_years_t WHERE year_label = 'Ph.D'),
            'SECOND_SEMESTER',
            2

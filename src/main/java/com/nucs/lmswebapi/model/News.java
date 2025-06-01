@@ -16,6 +16,7 @@ public class News extends Auditable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String title;
+    @Column(columnDefinition = "TEXT")
     private String description;
     private String imageUrl;
 }
