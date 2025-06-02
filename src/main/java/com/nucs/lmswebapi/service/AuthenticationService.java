@@ -6,7 +6,10 @@ import com.nucs.lmswebapi.repository.UserRepository;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.stereotype.Service;
 
 @Slf4j
@@ -24,7 +27,6 @@ public class AuthenticationService {
         );
 
         var isPasswordMatch = passwordEncoder.matches(form.password(), user.getPassword());
-        log.info("==========> " + passwordEncoder.encode("12345"));
         if(!isPasswordMatch){
             throw new EntityNotFoundException("Wrong password");
         }
